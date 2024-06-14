@@ -5,7 +5,7 @@ import {Arrow} from "@/mini-components"
 import {useRef,useEffect} from "react"
 
 const TopAd = () => {
-  const bannerRef = useRef();
+  const bannerRef = useRef<any>();
 
   useEffect(()=>{
   if(bannerRef.current){
