@@ -10,7 +10,7 @@ export default function Home() {
       <Hero/>
       <GalleryRow/>
        <MenuSection/>
-      {/* <Experience/> */}
+      <Experience/>
       <CardsRow/>
       <JoinRewards/>
       <FindLocation/>
