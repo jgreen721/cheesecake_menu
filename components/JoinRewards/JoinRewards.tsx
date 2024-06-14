@@ -12,7 +12,7 @@ const JoinCard = ()=>{
 </div>
       <div className="px-4 relative">
         <h1 className="text-6xl my-3">Join Our Rewards</h1>
-        <h5 className="text-xl my-10">Our exciting new program is now available nationwide! With complimentary slices of cheesecake, access to reservations, suprise & delight rewards, and no points to track, why wouldn't you sign-up?</h5>
+        <h5 className="text-xl my-10">Our exciting new program is now available nationwide! With complimentary slices of cheesecake, access to reservations, suprise  delight rewards, and no points to track, why wouldn't you sign-up?</h5>
         <div className="flex items-center justify-center gap-2">
         
           <Button text="Join Now" color="text-white" background="bgChampagne"/>
