@@ -15,7 +15,7 @@ const TopAd = () => {
   return (
     <motion.div initial={initialDrop} animate={animateDrop} className="bg-dark-champagne p-7 flex items-center justify-center drop-shadow-lg">
       <div id='parent-gallery' className="relative overflow-hidden w-full">
-        <div style={{"--i":bannerRef?.current?.clientWidth}} id="full-gallery" className="w-full">
+        <div id="full-gallery" className="w-full">
         <div ref={bannerRef} id="banner-1" className="flex items-center justify-center border-2 border-purple-500 opacity-0">
             <h3 className="no-wrap text-white font-bold text-xl drop-shadow-xl drop-shadow-yellow">Buy a $100 Gift Card online, Get a $20 Bonus Ecard! Available now through 6/28. *Additional terms and conditions apply</h3>
             <Arrow color="white" pseudo="champagne" scale='normal'/>
