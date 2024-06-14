@@ -6,16 +6,16 @@ const MenuItem:React.FC<any> = ({item})=>{
 
   return (
     <div className={`flex ${item.start ? 'justify-start' : 'justify-end'}`}>
-      <div className={`rounded-tr-[25px] flex items-center gap-4 w-[50%] min-w-[500px] p-4 ${!item.start ? 'bg-dark-champagne text-white' : 'bg-white'} drop-shadow my-4`}>
+      <div className={`rounded-tr-[25px] flex items-center gap-4 w-full md:w-[50%] md:min-w-[500px] p-4 ${!item.start ? 'bg-dark-champagne text-white' : 'bg-white'} drop-shadow my-4`}>
         <div>
           <Image src={item.image} width={450} height={450} alt="img"/>
         </div>
         <div>
           <div>
-            <h3 className="text-3xl font-bold mb-4">{item.name}</h3>
+            <h3 className="text-xl md:text-3xl font-bold mb-4">{item.name}</h3>
           </div>
           <div>
-            <h5 className="text-xl">{item.description}</h5>
+            <h5 className="text-sm md:text-xl">{item.description}</h5>
           </div>
         </div>
       </div>

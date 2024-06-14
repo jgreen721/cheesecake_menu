@@ -8,8 +8,8 @@ const FindLocation = () => {
      <div className="text-white relative z-50 text-center">
        <div className="glass-overlay absolute w-full h-full"></div>
        {/* <div className="absolute w-full h-full text-center"> */}
-          <h1 className="text-7xl z-10 relative p-5">Find a Restaraunt</h1>
-            <button className="my-5 z-10 relative p-5 bg-white text-black uppercase font-semibold w-[200px] rounded-md">Search</button>
+          <h1 className="text-3xl md:text-7xl z-10 relative p-5">Find a Restaraunt</h1>
+            <button className="my-5 z-10 relative p-4 bg-white text-black uppercase font-semibold w-[200px] rounded-md">Search</button>
        {/* </div> */}
      </div>
     </div>

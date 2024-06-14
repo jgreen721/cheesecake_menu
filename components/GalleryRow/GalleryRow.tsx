@@ -64,7 +64,7 @@ const GalleryRow = () => {
   return (
     <div onClick={changeCarousel} className={`h-[400px] relative flex`}>
       {/* <h2 className="absolute z-10">Counter:{counter}</h2> */}
-      <div className="absolute w-full h-full z-50 p-4">
+      <div className="absolute w-full h-full z-50 p-2 md:p-4">
         <div className="relative h-full w-full border-4 border-violet-600 rounded-br-[65px] rounded-tl-[105px]"></div>
       </div>
       <div className="flex">
@@ -74,11 +74,11 @@ const GalleryRow = () => {
         </motion.div>
       </div>
       <motion.div key={counter} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className={`flex-1 p-4 flex items-start justify-center flex-col`}>
-        <h1 className="text-5xl font-bold">{items[counter].title}</h1>
-        <h5 className="text-xl mt-5">{items[counter].blurb}</h5>
+        <h1 className="text-3xl md:text-5xl font-bold">{items[counter].title}</h1>
+        <h5 className="text-sm md:text-xl mt-5">{items[counter].blurb}</h5>
       </motion.div>
       </div>
-      <div  className="absolute z-10 right-10 bottom-5 flex gap-2 items-center">
+      <div  className="hidden md:block absolute z-10 right-10 bottom-5 flex gap-2 items-center">
         <button onClick={()=>setCounter((counter)=>counter > items.length-1 ? counter-1 : 3)} className="rotate-[180deg]">
         <Arrow color="champagne" pseudo="white" scale="small"/>
         </button>

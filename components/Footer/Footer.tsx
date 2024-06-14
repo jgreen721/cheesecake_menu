@@ -7,10 +7,10 @@ const FooterCol:React.FC<any> = ({linkSection})=>{
 
   return (
     <div>
-      <h2 className="text-xl">{linkSection.label}</h2>
+      <h2 className="text-lg md:text-xl">{linkSection.label}</h2>
       <ul>
         {linkSection.links.map(link=>(
-          <li className="my-5" key={link.id}>{link.name}</li>
+          <li className="my-5 text-sm text-thin" key={link.id}>{link.name}</li>
         ))}
       </ul>
     </div>
@@ -56,8 +56,8 @@ const Footer = () => {
   return (
     <div className="bg-gray-900 text-white pb-5 flex flex-col items-center justify-center px-5">
         <div className="text-start py-5">
-          <h3 className="text-3xl ml-10">The</h3>
-          <h1 className="text-5xl">CheesecakeFactory</h1>
+          <h3 className="text-2xl md:text-3xl ml-10">The</h3>
+          <h1 className="text-3xl md:text-5xl">CheesecakeFactory</h1>
         </div>
    <div className="flex-col flex lg:flex-row w-full">
       <div className="flex items-start justify-between w-full flex-1 py-10 px-2">

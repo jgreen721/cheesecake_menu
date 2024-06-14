@@ -11,7 +11,7 @@ const Button:React.FC<any> = ({text,background,color}) => {
     bgWhite:"bg-gray-300"
   }
   return (
-    <button className={`w-[200px] ${bgColors[background]} ${color} rounded-md p-2 py-5 uppercase tracking-[5px] font-semibold hover:${hoverColors[background]}`}>
+    <button className={`w-[200px] ${bgColors[background]} ${color} rounded-md p-2 py-5 uppercase text-sm md:text-xl no-wrap tracking-[5px] font-semibold hover:${hoverColors[background]}`}>
       {text}
     </button>
   )
