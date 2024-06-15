@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect,useState } from 'react'
 import {Canvas} from "@react-three/fiber"
 import {useGLTF,Float} from "@react-three/drei"
