@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react'
 
+
+interface CustomCSSProperties extends React.CSSProperties {
+    '--i'?: number;
+  }
+
+
+
 const Letter = ({letter,id})=>{
 
+    const customStyle: CustomCSSProperties = { '--i': id };
+
+
     return (
-        <div style={{"--i":id}} className="rotate-letter top-0 left-0 absolute w-full h-full text-center">
+        <div style={customStyle} className="rotate-letter top-0 left-0 absolute w-full h-full text-center">
             <h1 className='text-2xl md:text-5xl'>{letter}</h1>
         </div>
     )
@@ -18,8 +28,7 @@ const Spinner = ({phrase,size,duration}) => {
         "full":"full",
     })
 
-    let hVal = "h-[900px]"
-    let wVal = "w-[900px]"
+ 
 
     useEffect(()=>{
         if(innerWidth < 750){
