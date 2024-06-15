@@ -26,7 +26,7 @@ const Experience = () => {
       <Spinner phrase="Friends Fun" size="small" duration="8s"/>
       <Spinner phrase="Factory Yum" size="medium" duration="14s"/>
       <Spinner phrase="Cheesecake" size="large" duration="21s"/>
-
+      <div className="bg-scene-overlay"></div>
       </div>
     </div>
   )

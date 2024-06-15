@@ -16,13 +16,13 @@ body {
   font-family: cursive;
 }
 
-/* #hero {
-  background-image: url("@/public/cheesecakeawards.jpeg");
-} */
-
-#full-gallery {
-  /* animation: scrollbanner 7s linear infinite; */
-  /* border: 2px solid black; */
+.bg-scene-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: linear-gradient(var(--darkchampagne), red);
+  opacity: 0.35;
+  filter: blur(35px);
 }
 
 @keyframes scrollbanner {
