@@ -85,3 +85,18 @@
   /* background: var(--darkchampagne); */
   background: var(--i);
 }
+
+.rotate-letter {
+  /* background: silver; */
+  transform: rotate(calc(var(--i) * 30deg));
+}
+
+.spinner-parent {
+  animation: spinletters var(--duration) linear infinite;
+}
+
+@keyframes spinletters {
+  100% {
+    transform: rotate(360deg);
+  }
+}
