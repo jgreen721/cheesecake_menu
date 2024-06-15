@@ -5,8 +5,9 @@ import Image from "next/image"
 import {Spinner} from "@/mini-components"
 
 const Scene = ()=>{
-    const img = useGLTF("/cheesecake.glb")
-    const img2 = useGLTF("/chocolate_cake.glb")
+    let img = useGLTF("/cheesecake.glb");
+    let img2 = useGLTF("/chocolate_cake.glb");
+   
     const [img1Location, setImg1Location] = useState([-2,-2,-2])
     const [img2Location,setImg2Location] = useState([3,0,0])
 
@@ -18,7 +19,9 @@ setImg1Location([0,-4,-2])
       }
     })
 
-  return (
+
+ 
+  return img?.scene ? (
     <Canvas style={{height:"100%"}}>
       <color attach="background" args={["transparent"]}/>
       <ambientLight intensity={.8}/>
@@ -30,7 +33,7 @@ setImg1Location([0,-4,-2])
       <primitive  rotation={[Math.PI * .4,-Math.PI * .6,0]} scale={.045} position={img2Location} object={img2.scene}/>
       </Float>
     </Canvas>
-  )
+  ) : <h1>Loading assets!!!</h1>
 }
 
 const Experience = () => {
