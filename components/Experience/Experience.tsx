@@ -36,7 +36,7 @@ setImg1Location([0,-4,-2])
 const Experience = () => {
   return (
     <div className={`h-[700px] overflow-hidden relative`}>
-      <Image className="absolute z-50 opacity-10 top-0 left-0" src="/bgexperience.jpeg" fill sizes="w-fill"/>
+      <Image className="absolute z-50 opacity-10 top-0 left-0" src="/bgexperience.jpeg" fill sizes="w-fill" alt="img"/>
       <Scene/>
       <div className="absolute w-full h-full left-0 top-0 border-4 flex items-center justify-center">
       <Spinner phrase="Friends Fun" size="small" duration="8s"/>
