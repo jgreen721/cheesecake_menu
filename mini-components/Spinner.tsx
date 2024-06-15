@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 interface CustomCSSProperties extends React.CSSProperties {
     '--i'?: number;
+    '--duration'?:string;
   }
 
 
@@ -20,6 +21,9 @@ const Letter = ({letter,id})=>{
 }
 
 const Spinner = ({phrase,size,duration}) => {
+
+    const customDuration: CustomCSSProperties = { '--duration': duration };
+
 
     const [sizes,setSizes] = useState({
         "small":"h-[350px] w-[350px]",
@@ -41,7 +45,7 @@ const Spinner = ({phrase,size,duration}) => {
         }
     })
   return (
-    <div style={{"--duration":duration}} className={`spinner-parent absolute ${sizes[size]} border-red-600`}>
+    <div style={customDuration} className={`spinner-parent absolute ${sizes[size]} border-red-600`}>
 {phrase.split("").map((letter,idx)=>(
     <Letter key={idx} id={idx+1} letter={letter}/>
 ))}
